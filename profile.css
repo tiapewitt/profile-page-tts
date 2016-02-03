@@ -1,0 +1,35 @@
+body{
+		background:url(https://lh3.googleusercontent.com/Uj2HCZfjN8Wx2w8pzJuQJzU6y1slmWMkpu5F6LVO4_QJ1iTZYFDFaFxnOKER91_yt2ZRs9aarfsTKhGzxbKSUums9__hRLC1pmIJOqVKgYfr2cEZFjC8wDcJ3MfLR7zP-W-gAk4Tu5YDryXQkgUEdZwemT4SjkrY-V4NJHvXZS89jZ65WgiYWxR6gks_7WETaeqI_NtRGLb14qG6ANaDud0DCG2HsfY3z1RhYPciEK3h675etXtrfD51rtKSNMo7qxrsK0sYgix8uJYF2mMcEPtxYRnRfe1jBK7B8o67WDZekPQCM_V_2tl7bHwoxrXWfGWAoIEC-1iM-D8-lPccI98v0bhwZ9kIB5MQ0aob-JfoXTdFM9zCQW6t9vDHqhIc99w7AQE0s9LZLClMfD0Z7f5dYOzvAA_8srCzj6Tdroa0tRWidf6hyhBk9lWyR4Jepv95JsOiS1vfWAlOU-WNfV0-GkHq-w9deXXB66C8EuYjgz0ewkELyIXzw_DSp5pbw5S4YFE0o0kOsrDrdBo3c__DMSfSds3iFSQjW7tgqsJx-UxgGbxCVdbAjKB82Y_xQXOh=w1856-h1236-no);
+		background-size: cover;
+		background-repeat: no-repeat;
+}
+h1{
+	font-size:5em; 
+	font-family:'Lora'; 
+	color:#ff7373; 
+	font-weight: 700;
+	margin-top: 0.75%;
+}
+table{
+	background-color: rgba(52, 174, 144, 0.15);
+	font-family: 'Calligraffitti';
+	font-weight: 700;
+	font-style: bold;
+	font-color: #4418sc;
+}
+
+.first_row_interests{
+	background-color: rgba(52, 174, 144, 0.40);
+	font-size: 2em;
+}
+
+.third_row{
+	background-color: rgba(52, 174, 144, 0.40);
+}
+
+.social_block{
+	display: inline-block;
+	margin: 0 auto;
+	padding: 2%;
+
+}
