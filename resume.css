@@ -1,0 +1,23 @@
+body{
+	background-color: #91C3C7;
+
+}
+.container{
+	border: 1em;
+	padding: 10px;
+	color: #404040;
+	background-color: #C1EDF0;
+}
+.b {
+	margin: 0 auto;
+	color: #404040;
+	font-size: 2em;
+
+}
+
+.container-fluid{
+	border: 2em;
+	padding: 10px;
+	color: #404040;
+	background-color: #c1edf0;
+}
