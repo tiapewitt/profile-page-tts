@@ -1,23 +1,36 @@
 body{
 	background-color: #91C3C7;
-
 }
-.container{
+.heading{
+	font-family: "Judson";
+	text-align: center;
+	margin: 0 auto;
+	color: #404040;
+	font-size: 1em;
+	background-color: #C1EDF0;
+}
+.heading h1{
+	font-size: 3em;
+}
+.left{
+	font-family: "Arimo";
+	text-align: left;
 	border: 1em;
 	padding: 10px;
 	color: #404040;
 	background-color: #C1EDF0;
-}
-.b {
-	margin: 0 auto;
-	color: #404040;
-	font-size: 2em;
 
 }
-
-.container-fluid{
-	border: 2em;
+.right{
+	font-family: "Arimo";
+	text-align: right;
+	border: 1em;
 	padding: 10px;
 	color: #404040;
-	background-color: #c1edf0;
+	background-color: #C1EDF0;
+
+}
+.container h2{
+	font-size: 1.5em;
+	
 }

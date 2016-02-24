@@ -1,35 +1,73 @@
 body{
-		background:url(https://lh3.googleusercontent.com/Uj2HCZfjN8Wx2w8pzJuQJzU6y1slmWMkpu5F6LVO4_QJ1iTZYFDFaFxnOKER91_yt2ZRs9aarfsTKhGzxbKSUums9__hRLC1pmIJOqVKgYfr2cEZFjC8wDcJ3MfLR7zP-W-gAk4Tu5YDryXQkgUEdZwemT4SjkrY-V4NJHvXZS89jZ65WgiYWxR6gks_7WETaeqI_NtRGLb14qG6ANaDud0DCG2HsfY3z1RhYPciEK3h675etXtrfD51rtKSNMo7qxrsK0sYgix8uJYF2mMcEPtxYRnRfe1jBK7B8o67WDZekPQCM_V_2tl7bHwoxrXWfGWAoIEC-1iM-D8-lPccI98v0bhwZ9kIB5MQ0aob-JfoXTdFM9zCQW6t9vDHqhIc99w7AQE0s9LZLClMfD0Z7f5dYOzvAA_8srCzj6Tdroa0tRWidf6hyhBk9lWyR4Jepv95JsOiS1vfWAlOU-WNfV0-GkHq-w9deXXB66C8EuYjgz0ewkELyIXzw_DSp5pbw5S4YFE0o0kOsrDrdBo3c__DMSfSds3iFSQjW7tgqsJx-UxgGbxCVdbAjKB82Y_xQXOh=w1856-h1236-no);
-		background-size: cover;
-		background-repeat: no-repeat;
-}
-h1{
-	font-size:5em; 
-	font-family:'Lora'; 
-	color:#ff7373; 
-	font-weight: 700;
-	margin-top: 0.75%;
-}
-table{
-	background-color: rgba(52, 174, 144, 0.15);
-	font-family: 'Calligraffitti';
-	font-weight: 700;
-	font-style: bold;
-	font-color: #4418sc;
+	background-color: #664277;
 }
 
-.first_row_interests{
-	background-color: rgba(52, 174, 144, 0.40);
+
+.jumbotron{
+	background: url("http://s27.postimg.org/mfjc942f7/Fav_sunset_west.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 20%;
+	width: 100%;
+	height: 620px;
+	background-attachment: fixed;
+	background-position: center;
+	margin-bottom: 0;
+	margin-color: #664277;
+}
+.jumbotron h1{
+	text-align: center;
+	text-indent: left;
+	vertical-align: center;
 	font-size: 2em;
+	font-family: "Judson";
 }
-
-.third_row{
-	background-color: rgba(52, 174, 144, 0.40);
-}
-
-.social_block{
-	display: inline-block;
+.contact{
+	
 	margin: 0 auto;
-	padding: 2%;
+}
+
+.features{
+	
+	background-color: #664277;
+	position: center;
+	padding: 8%;
 
 }
+
+.features p{
+	font-family: 'Arimo', sans-serif;
+	position: center;
+	text-align: center;
+	color: #323232;
+	font-size: 1.2em;
+	/*padding-top: 10px;*/
+}
+
+footer{
+	background-color: grey;
+	position: fixed;
+	width: 100%;
+	padding: 20%;
+
+}
+
+footer li{
+	font-family: "Judson";
+	display: inline;
+	text-align: center;
+	vertical-align: center;
+	float: left;
+	padding: 5%;
+}
+
+
+@media screen and (max-width: 776px){
+	.features img{
+		max-width: 100%;
+		margin:auto;
+	}
+/*.container-fluid{
+	font-size: 1.5em;
+	font-family: "Judson";
+}*/
