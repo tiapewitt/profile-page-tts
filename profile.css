@@ -1,7 +1,28 @@
+
+
+
 body{
 	background-color: #664277;
-}
+	position: relative;
 
+}
+.navbar{
+	display: inline-block;
+}
+.dropdown{
+	text-decoration: none;
+
+}
+.menu-mockup .nav-tabs {
+  border-bottom: 0;
+}
+.modal-body {
+/*background-image: url("http://s16.postimg.org/8krnq3aet/voltrailwilson.jpg");
+background-repeat: no-repeat;*/
+text-align: center;
+/*background-size: 260px;
+background-position: left;*/
+}
 
 .jumbotron{
 	background: url("http://s27.postimg.org/mfjc942f7/Fav_sunset_west.jpg");
@@ -9,29 +30,36 @@ body{
 	background-size: cover;
 	padding: 20%;
 	width: 100%;
-	height: 620px;
+	height: 650px;
 	background-attachment: fixed;
 	background-position: center;
 	margin-bottom: 0;
 	margin-color: #664277;
+	margin-bottom: 0!important;
 }
 .jumbotron h1{
+	padding-top: 30%;
 	text-align: center;
 	text-indent: left;
 	vertical-align: center;
-	font-size: 2em;
+	font-size: 4em;
 	font-family: "Judson";
-}
-.contact{
-	
-	margin: 0 auto;
+	color: black;
+	text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
 }
 
+
 .features{
-	
 	background-color: #664277;
 	position: center;
-	padding: 8%;
+	padding-left: 8%;
+	padding-right: 8%;
+	padding-top: 8%;
+	padding-bottom: 6%;
 
 }
 
@@ -43,16 +71,70 @@ body{
 	font-size: 1.2em;
 	/*padding-top: 10px;*/
 }
+.resume{
+	background-color: #91C3C7;
+	margin-top: 0!important;
+}
+.heading{
+	font-family: "Judson";
+	text-align: center;
+	margin: 0 auto;
+	color: #404040;
+	font-size: 1em;
+	background-color: #C1EDF0;
+}
+.heading h1{
+	font-size: 3em;
+}
+.left{
+	font-family: "Arimo";
+	text-align: left;
+	border: 1em;
+	padding: 10px;
+	color: #404040;
+	background-color: #C1EDF0;
 
-footer{
-	background-color: grey;
-	position: fixed;
-	width: 100%;
-	padding: 20%;
+}
+.right{
+	font-family: "Arimo";
+	text-align: right;
+	border: 1em;
+	padding: 10px;
+	color: #404040;
+	background-color: #C1EDF0;
+
+}
+.container h2{
+	font-size: 1.5em;
+	
+}
+
+.interests{
+	background-color: #CE96A1;
+	position: center;
+	margin: 0 auto;
+	padding-left: 8%;
+	padding-right: 8%;
+	padding-top: 2%;
+	padding-bottom: 6%;
 
 }
 
-footer li{
+.interests p{
+	font-size: 1.5em;
+	font-family: "Judson";
+	text-align: center;
+	padding-left: 8%;
+	padding-right: 8%;
+	padding-top: 6%;
+	padding-bottom: 6%;
+}
+
+.footer{
+	background-color: #C4BFBF;
+}
+
+.footer li{
 	font-family: "Judson";
 	display: inline;
 	text-align: center;
@@ -62,10 +144,11 @@ footer li{
 }
 
 
+
 @media screen and (max-width: 776px){
 	.features img{
 		max-width: 100%;
-		margin:auto;
+		margin: auto;
 	}
 /*.container-fluid{
 	font-size: 1.5em;

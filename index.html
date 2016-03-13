@@ -2,15 +2,43 @@
 <html>
 <head>
 	<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Tia</title>
+  <link rel="shortcut icon" href="https://en.gravatar.com/userimage/101157554/be70f725f3616437a77ca9722dc1444f.jpeg" />
+<link rel="icon" href="https://en.gravatar.com/userimage/101157554/be70f725f3616437a77ca9722dc1444f.jpeg" />
+
 	<link type="text/css" rel="stylesheet" href="profile.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Judson:700|Arimo' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="animate.css">
-
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
 </head>
-<body>
+
+  <body data-spy="scroll" data-target=".navbar">
+
 <nav class="navbar-inverse navbar-fixed-top">
+  <div id=".navbar">
+    <ul class="nav nav-tabs" role="tablist">
+
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -19,30 +47,37 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-      </button>
+      </button> 
     </div>
-
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active">
-        <li><a href="https://github.com/tiapewitt" target="_blank">Projects </a></li>
-        <li><a href="file:///Users/tiapewitt/Documents/TTS/profile_page/resume.html"target="_blank">Skills </a></li>
-        <li><a href="https://tiapewitt.wordpress.com/" target="_blank">Photography </a></li>
-        <li><a href="#">Interests </a></li>
+      <ul class="nav navbar-nav navbar-left">
+<!--   <li><ul class="nav nav-tabs">
+  <li class="dropdown">
+  <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="menu" aria-haspopup="true" aria-expanded="false">
+     Links<span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+    <li><a href="https://tiapewitt.wordpress.com" target="_blank">Photography</a></li>
+    <li><a href="https://github.com/tiapewitt" target="_blank">Projects</a></li>
+    </ul>
+  </li>
+</ul></li> -->
+      <li><a href="#links">Links</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#interests">Interests</a></li>
     </li>
-      </ul>
+  </ul>
 <ul class="nav navbar-nav navbar-right">
 <div class="container-fluid contact">
-<a href="#" data-toggle="modal" data-target="#myModal">
-<button type="button" class="btn btn-default btn-md" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> 
+<button type="button" class="btn btn-default btn-md" data-toggle="modal" data-target="#myModal" data-backdrop="false">
+<i class="material-icons">face</i>
 </button>
- <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Contact Information</h4>
+        <h4 class="modal-title" id="myModallabel">Contact Information</h4>
       </div>
       <div class="modal-body">
         <p>615-207-4983</p>
@@ -56,13 +91,11 @@
     </div>
   </div>
 </div>
-</a>
 </div>
 </ul>
- 
-    
+
+
     </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
 </nav>
 
 
@@ -72,145 +105,170 @@
 
 </div>
 
-
+<div id="links">
 <div class="container-fluid features">
 
 	<div class="row">
-		<div class="col-xs-12 col-sm-4">
-			<a href="https://tiapewitt.wordpress.com/"><img class="img-circle" src="https://scontent-atl3-1.xx.fbcdn.net/hphotos-xlp1/t31.0-8/12628486_10205818485001003_5823564632999202453_o.jpg" target="_blank"width="360" height="278">
+		<div class="col-xs-12 col-sm-3">
+			<!-- <a href="https://tiapewitt.wordpress.com/"><img class="img-rounded" src="https://scontent-atl3-1.xx.fbcdn.net/hphotos-xlp1/t31.0-8/12628486_10205818485001003_5823564632999202453_o.jpg" target="_blank"width="150" height="150"> -->
 			<p><a href="https://tiapewitt.wordpress.com/" target="_blank"><img src="http://s15.postimg.org/jdgltxf5z/wordpressicon.png" width="50" height="50"></a></p>	
 		</div>
-		<div class="col-xs-12 col-sm-4">
-			<a href="https://github.com/tiapewitt"><img class="img-circle" src="http://i66.tinypic.com/2psesfl.jpg" target="_blank" width="358" height="278">
+		<div class="col-xs-12 col-sm-3">
+		<!-- 	<a href="https://github.com/tiapewitt"><img class="img-rounded" src="http://i66.tinypic.com/2psesfl.jpg" target="_blank" width="150" height="150"> -->
 			<p><a href="https://github.com/tiapewitt" target="_blank"><img src="http://i64.tinypic.com/2evawd2.jpg" width="50" height="50"></a></p>
 		</div>
-		<div class="col-xs-12 col-sm-4">
-			<a href="https://www.linkedin.com/in/tia-pewitt-610a8b44" ><img class="img-circle" src="http://i66.tinypic.com/dey8lc.jpg" target="_blank" width="358" height="278">
+		<div class="col-xs-12 col-sm-3">
+<!-- 			<a href="https://www.linkedin.com/in/tia-pewitt-610a8b44" ><img class="img-rounded" src="http://i66.tinypic.com/dey8lc.jpg" target="_blank" width="150" height="150"> -->
 			<p><a href="https://www.linkedin.com/in/tia-pewitt-610a8b44" target="_blank"><img src="http://i68.tinypic.com/4pxkq8.jpg" width="50" height="50"></a></p> 
 		</div>
-	</div>
-
-</div>
-
-
-
-<footer class="container-fluid">
-<ul><br>
-	<li>615-207-4983</li>
-	<li>tiapewitt@gmail.com</li>
-	<li>AVL et al</li>
-
-</ul>
-</footer>
-
-<!-- <div class="modal">		
-<a href="#" data-toggle="modal" data-target="#myModal">
-<button type="button" class="btn btn-default btn-md" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> 
-</button>
- <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Contact Information</h4>
-      </div>
-      <div class="modal-body">
-        <p>615-207-4983</p>
-        <p>tiapewitt@gmail.com</p>
-        <p>48 Chapel Hill Church Road</p>
-        <p>Asheville, NC 28803</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
+    <div class="col-xs-12 col-sm-3">
+     <!--  <a href="#"><img class="img-rounded" src="#" target="_blank" width="150" height="150"> --><p><a href="https://www.facebook.com/tia.pewitt" target="_blank"><img src="http://s11.postimg.org/88wxeylrj/fblogo.jpg" width="50" height="50"></a></p>
     </div>
-  </div>
+	</div>
 </div>
-</a>
-</div> -->
+
+</div>
+<div id="skills">
+
+<div class="container-fluid resume">
+  <br>
+	<div class="container heading">
+		<p><h1>Tia Pewitt</h1><p><br>
+		<p>tiapewitt@gmail.com     /     615-207-4983</p>
+		<p>AVL et al</p>
+	</div>
+
+<div class="container left">
+	<div class="row">
+		<div class="col-xs-12 col-md-6">
+			<h2>Experience</h2>
+<p>			
+<strong>Riffs Catering</strong><br>
+<em>September 2014 - March 2015</em><br>
+Event Specialist: 
+Responsible for Sales, Event Management, Menu Creation, Kitchen Duties, Marketing campaigns, etc. Increased sales and service opportunities for local catering business  
+</p>
+<p>
+<strong>Art Pancake’s Party and Wedding Rentals</strong><br>
+<em>December 2012 – September 2014</em><br>
+General Manager: 
+Responsible for six employees, full operational and inventory management, purchasing, sales, systems management, hiring/human resources, etc. 
+Increased overall sales by more than 18% overall with some months exceeding 40% yoy
+</p>
+<p>
+<strong>Terra Delicious Organic Catering and Event Vending</strong><br>
+<em>November 2009 – December 2012</em><br>
+Owner/Operator: 
+Responsible for all aspects of owning and operating Food Truck business. Includes financial management, purchasing, preparation, execution, customer service, etc. Strong sales - business outgrew operational budget and equipment. 
+</p>
+<p>
+<strong>Nature’s Helpers Gardening Services</strong><br>
+<em>September 2014 - December 2015<br>December 2009 – December 2012</em><br>Landscaping and gardening specialists</p>
+<p>
+<strong>Gaylord Opryland Resort and Convention Center</strong><br>
+<em>May 2006 - November 2009</em><br>
+Catering Sales Manager:
+Responsible for Food and Beverage Sales, forecasting and on-site services for Convention Groups ranging from 300 to 4500 attendees with overall sales exceeding 18 million.  
+</p>
+<p>
+<em>January 2005 - April 2006</em><br>
+Executive Sales Manager:
+One Stop Shop service position with areas of responsibility ranging from room block management to on-site set up capabilities and attractions booking for Convention Groups from 10 - 300 guests
+</p>
+<p>
+<em>August 2003 - December 2004</em><br>
+Convention Coordinator:
+Responsible for on-site management of convention groups, security/cleanliness of assigned space and coordination of internal meetings
+</p>
+
+		</div>
+	<div class="container right">
+		<div class="col-xs-6 col-md-6">
+			<h2>Education</h2>
+<p>
+<strong>Tech Talent South</strong><br>
+<em>Winter 2016</em><br>
+Ruby on Rails Full Stack Immersion
+</p>
+<p>
+<strong>University of Tennessee, Knoxville</strong><br>
+<em>1999 - 2003</em><br>
+Bachelor of Science in Hotel and Tourism Management<br>
+Minor in Business Administration<br>
+</p>
+
+<h2>Skills and Qualifications</h2>
+<p><strong>Junior Developer</strong></p>
+<p>Ruby/Rails, HTML5, CSS, Javascript</p>
+<p><strong>Photography</strong></p>
+<p><strong>Management and Sales</strong></p>
+<p>Corporate, Small Business and Entrepreneurial management experience</p>
+<p>Exceeded sales and customer service expectations</p>
+<p><strong>Event Specialist</strong></p>
+<p>Catering</p>
+<p>Event management and coordination</p>
+
+
+<h2>Certifications</h2>
+<p>CERP - Certified Events Rental Professional</p>
+<p>Earned July 2014</p>
+
+<h2>Interests</h2>
+<p>Food and Sustainability</p>
+<p>Outdoor activities: hiking, backpacking, canoeing</p>
+<p>Conservation and Animals</p>
+
+
+		</div>
+	</div>
+</div>
+</div>
+
+
+</div>
+
+<div id="interests">
+  <div class="container-fluid interests">
+  <p><em>"I haven't been everywhere, but it's on my list"</em> - Susan Sontag</p>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-3">
+    <center><img src="http://s29.postimg.org/at67lnj1j/west_road.jpg" class="img-rounded" width="150" height="150" alt="Responsive image"></center>
+    <p>Travel</p>
+  </div>
+    <div class="col-xs-12 col-sm-3">
+    <center><img src="http://s7.postimg.org/geqsqaa6j/packs.jpg" class="img-rounded" width="150" height="150"  alt="Responsive image"></center>
+    <p>Outdoors</p>
+  </div>
+    <div class="col-xs-12 col-sm-3">
+    <center><img src="http://i66.tinypic.com/359ab79.jpg" class="img-rounded" width="150" height="150" alt="Responsive image"></center>
+    <p>Animals</p>
+  </div>
+     <div class="col-xs-12 col-sm-3">
+    <center><a href="https://tiapewitt.wordpress.com/" target="_blank"><img src="https://scontent-atl3-1.xx.fbcdn.net/hphotos-xlp1/t31.0-8/12628486_10205818485001003_5823564632999202453_o.jpg"  class="img-rounded" width="150" height="150" alt="Responsive image"></a></center>
+    <p>Photography</p>
+  </div>
+    </div>
+</div>
+  </div>
+
+<div class="container-fluid footer">
+
+      <ul>
+    <li>&copy Tia Pewitt</li> 
+        <li>615-207-4983</li>
+        <li>tiapewitt@gmail.com</li>
+        <li>tiapewitt.com</li>
+        <li>happymouseproductions.com</li>
+      </ul>
+   
+  </div>
 
 
 
 
 
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<!-- <script src="profile.js"></script> -->
+<script src="profile.js"></script>
 </body>
 </html>
 
-
-<!-- <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<title>Tia</title>
-	<link type="text/css" rel="stylesheet" href="profile.css">
-	<link href='https://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Lora:700' rel='stylesheet' type='text/css'>
-
-</head>
-<body>
-	<h1><em><center>Tia</center></em>
-	</h1>
-	<br>
-	<br>	
-	<div class="move_links">
-	</div>
-	<center><table border="6px">
-		<thead>
-			<tr style="font-size:28px;">
-				<th><center>Photography</center></th>
-				<th><center>Projects</center></th>
-				<th><center>Resume</center></th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td><center>
-				<a href="https://www.facebook.com/tia.pewitt/photos_all" target="_blank"><img src="http://i68.tinypic.com/155172v.jpg" alt="broken image"></a></center></td>
-				<td><center><a href="https://github.com/tiapewitt" target="_blank"><img src="http://i64.tinypic.com/2i0uix5.jpg" alt="broken image"></a></center></td>
-				<td><center><a href="file:///Users/tiapewitt/Documents/TTS/profile_page/resume.html" target="_blank"><img src="http://i66.tinypic.com/206e80z.jpg"></a></center></td>
-		</tr>
-		</tbody>
-
-	</table></center>
-	<br>
-	<br>
-	<br>
-	<center><table border="6px">
-		<thead>
-			<tr class="first_row_interests">
-				<th colspan="4"><center>Interests</center></th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-						<td><center><img src="http://i67.tinypic.com/6od9mq.jpg"></center></td>
-						<td><a href="http://makeyourbodywork.com/best-healthy-food-blogs/" target="_blank"><img src="http://i63.tinypic.com/2w6wdww.jpg"></a></center></td>
-						<td><center><img src="http://i64.tinypic.com/8y7uhg.jpg"></center></td>
-						<td><center><img src="http://i67.tinypic.com/n1dkj6.jpg"></center></td>
-			</tr>
-			<tr class="third_row">
-				<td><center>Outdoors</center></td>
-				<td><center>Food</center></td>
-				<td><center>Plants</center></td>
-				<td><center>Drink</center></td>
-			</tr>
-		</tbody>
-
-	</table></center>
-
-	<center>
-	<div class="social_block">
-		<a href="https://www.linkedin.com/in/tia-pewitt-610a8b44" target="_blank"><img src="http://i68.tinypic.com/4pxkq8.jpg" width="30" height="30"></a>"
-		<a href="https://www.facebook.com/tia.pewitt" target="_blank"><img src="http://i63.tinypic.com/wkl2q8.jpg" width="30" height="30"></a>
-		<a href="https://www.instagram.com/tiapewitt/" target="_blank"><img src="http://i68.tinypic.com/dcab9s.jpg" width="30" height="30"></a>
-	</div>
-	</center>
-	<br>
-	<br>
-	<br>
-
-</body>
-</html>
